@@ -1,0 +1,91 @@
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.inputText {
+    display: flex;
+    justify-items: center;
+    position: relative;
+}
+
+.inputText input {
+    background: transparent;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+    outline: none;
+    padding: 0.5rem 1rem;
+    width: 24rem;
+    transition: all 150ms;
+}
+
+.inputText input::placeholder {
+    color: var(--black-2);
+}
+
+.outline input:focus{
+    box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.filled input:focus{
+    background-color: var(--focusBackground);
+}
+
+.inputText input:focus ~ label{
+    color: var(--primary);
+}
+
+.outline input {
+    box-shadow: inset 0 0 0 1px var(--black-1);
+}
+
+.filled input {
+    background: var(--black-1);
+}
+
+.style-1 label {
+    color: var(--black-4);
+    left: 1rem;
+    position: absolute;
+    top: 0.5rem;
+    transition: all 150ms;
+}
+
+.style-1 input {
+    padding-top: 2rem;
+}
+
+.iconLeft svg,
+.iconRight svg {
+    color: var(--black-4);
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.iconLeft svg{
+    left: 1rem;
+}
+
+.iconRight svg{
+    right: 1rem;
+}
+
+.iconRight input {
+    padding-right: 3.25rem;
+}
+
+.iconLeft input {
+    padding-left: 3.25rem;
+}
+
+.iconLeft label {
+    padding-left: 2.25rem;
+}
+
+.helper {
+    color: var(--black-2);
+}

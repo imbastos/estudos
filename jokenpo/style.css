@@ -1,0 +1,147 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: var(--neutral-colors--gray-200);
+  background-color: var(--neutral-colors--gray-900);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Color styles */
+  --brand-colors--brand-color: rgba(147, 51, 234, 1);
+  --brand-colors--brand-color-light: rgba(168, 85, 247, 1);
+  --neutral-colors--gray-900: rgba(17, 24, 39, 1);
+  --neutral-colors--gray-800: rgba(31, 41, 55, 1);
+  --neutral-colors--gray-700: rgba(55, 65, 81, 1);
+  --neutral-colors--gray-600: rgba(75, 85, 99, 1);
+  --neutral-colors--gray-500: rgba(107, 114, 128, 1);
+  --neutral-colors--gray-400: rgba(156, 163, 175, 1);
+  --neutral-colors--gray-300: rgba(209, 213, 219, 1);
+  --neutral-colors--gray-200: rgba(229, 231, 235, 1);
+  --neutral-colors--gray-100: rgba(243, 244, 246, 1);
+  --neutral-colors--gray-50: rgba(249, 250, 251, 1);
+  --status-colors--status-success: rgba(110, 231, 183, 1);
+  --status-colors--status-error: rgba(251, 113, 133, 1);
+
+  /* Text-size styles */
+  /* base size: input-text (16px) */
+  --button-label: 1.12rem;
+  --input-text: 1rem;
+  --input-label: 0.88rem;
+  --heading-lg: 1.5rem;
+  --card-number: 1rem;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.p1 {
+  padding: 1rem;
+}
+
+.p4 {
+  padding: 4rem;
+}
+
+.app {
+  height: 100vh;
+  width: 100%;
+}
+
+.center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.h1 {
+  font-weight: 500;
+}
+
+.gray200 {
+  color: var(--neutral-colors--gray-200);
+}
+
+.gray500 {
+  color: var(--neutral-colors--gray-500);
+}
+
+.h2 {
+  font-weight: 400;
+}
+
+.brand{
+  color: var(--brand-colors--brand-color);
+}
+
+.btn {
+  border: 0;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  outline: 0;
+}
+
+.round {
+  border-radius: 2rem;
+}
+
+.w8 {
+  max-width: 8rem;
+  width: 100%;
+}
+
+.h8 {
+  max-width: 8rem;
+  width: 100%;
+}
+
+.bgpurple {
+  background: var(--brand-colors--brand-color);
+  color: var(--neutral-colors--gray-200);
+}
+
+.bg800 {
+  background: var(--neutral-colors--gray-800);
+}
+
+.bgpurple:hover {
+  background: var(--brand-colors--brand-color-light);
+}
+
+.g1 {
+  display: flex;
+  gap: 1rem;
+}
+
+.sbtwn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottomv {
+  align-items: end;
+  display: flex;
+}
